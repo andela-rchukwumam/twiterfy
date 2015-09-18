@@ -44,6 +44,7 @@ group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform? #was asked to add this during guard run
 end
 
 group :production do
